@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+select ${1:t1}.${2:*} from ${3:TableName} ${1:t1}
+$0
+go
+
+]]></content>
+	<tabTrigger>sel</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

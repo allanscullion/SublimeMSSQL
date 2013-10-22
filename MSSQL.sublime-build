@@ -1,0 +1,13 @@
+{
+    "cmd": ["sqlcmd", "-S", "%ST_DEFAULT_SQLSERVER%", "-i", "$file"],
+    "selector": "source.sql",
+    "shell": true,
+
+    "variants": [
+	    { 
+		    "cmd": ["sqlcmd", "-S", "%ST_DEFAULT_SQLSERVER%", "-i", "$file", "-o", "${file/.sql/.out/}"],
+	    	"name": "Execute and output to file",
+	    	"shell": true
+	    }
+	]
+}

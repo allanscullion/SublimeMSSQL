@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+join ${1:Table2} ${2:t2} on ${3:t1}.${4:t1key} = ${2:t2}.${5:t2key}
+]]></content>
+	<tabTrigger>jo</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

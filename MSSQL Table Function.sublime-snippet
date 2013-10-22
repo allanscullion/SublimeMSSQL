@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+create function ${1:fnName}
+(
+	-- Add the parameters for the function here
+	@${2:p1} ${3:int}, 
+	@${4:p1} ${5:int}
+)
+returns 
+@${6:ret} table 
+(
+	-- Add the column definitions for the TABLE variable here
+	${7:c1} ${8:int}, 
+	${9:c2} ${10:int}
+)
+as
+begin
+	-- Fill the table variable with the rows for your result set
+	
+	return @${6:ret}
+end
+go
+
+]]></content>
+	<tabTrigger>tfun</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

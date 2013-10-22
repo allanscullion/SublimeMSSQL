@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+create function ${1:FunctionName}
+(
+	-- Add the parameters for the function here
+	@${2:p1} ${3:int}, 
+)
+returns ${4:int}
+as
+begin
+	-- Declare the return variable here
+	declare @Result ${4:int}
+
+	-- Add the T-SQL statements to compute the return value here
+	select @Result = @${2:p1}
+
+	-- Return the result of the function
+	return @Result
+
+end
+go
+
+]]></content>
+	<tabTrigger>sfun</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
